@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" href="css/product.css">
+	<title>Danh mục sản phẩm</title>
+</head>
+<!-- Danh mục sản phẩm -->
+<body>
+	<!-- Thanh điều hướng -->
+	<div class="header" id="header">
+		<div class="nav-wrapper">
+			<a href=""><h1>Thiendev's Shop</h1></a>
+			<div class="social-contact">
+				<a href="#" title="Facebook"><i class="icon i-facebook"></i></a>
+				<a href="#" title="Youtube"><i class="icon i-youtube"></i></a>
+				<a href="#" title="Github"><i class="icon i-github"></i></a>
+			</div>
+		</div>
+		<div class="manager">
+			<div class="search">
+				<input placeholder="Tìm kiếm sản phẩm...">
+				<button><i class="icon i-search"></i></button>
+			</div>
+			<div class="user-info">
+				<a href="#"><i class="icon i-shopping-cart"></i>Giỏ hàng</a>
+				<a href="#"><i class="icon i-user"></i>Số dư: 0 vnđ</a>
+			</div>
+		</div>
+		
+		<div class="nav-wrapper">
+			<div class="nav-contact">
+				<!-- Liên kết số điện thoại -->
+				<a href="#"><i class="icon i-phone-call"></i>+84 0123456789</a>
+				<!-- Email -->
+				<a href="mailto:thienlu2007@gmail.com"><i class="icon i-mail"></i>thienlu2007@gmail.com</a>
+			</div>
+			<div class="nav-list">
+				<!-- Liên kết trang chủ -->
+				<a href="index.html">Trang chủ</a>
+				<div class="dropdown">
+					<!-- Sản phẩm -->
+					<a href="product.html">Sản phẩm <i class="icon i-chevron-down"></i></a>
+					<div class="dropdown-content">
+						<a href="#">Trái cây</a>
+						<a href="#">Rau củ</a>
+						<a href="#">Thực phẩm khác</a>
+					</div>
+				</div>
+				<!-- Liên hệ -->
+				<a href="contact.html">Liên hệ</a>
+				<!-- Đăng nhập -->
+				<a href="login.html">Đăng nhập/Đăng kí</a>
+			</div>
+		</div>
+	</div>
+	<!-- Thân trang -->
+	<!-- Mở đầu -->
+	<div class="intro">
+		<div class="path-nav">
+			<a href="#"><i class="icon i-home"></i>Trang chủ</a>
+			<a href="#">Trái cây</a>
+		</div>
+		<div class="heading">
+			<h1>{Trái cây}</h1>
+			<p>{Tráng miệng, giải nhiệt, tốt cho sức khoẻ!}</p>
+		</div>
+		<div class="sort-wrapper">
+			<label for="sort-box">Sắp xếp theo:</label>
+			<select class="sort-box" name="sort-box">
+				<option value="rated">Đánh giá</option>
+				<option value="atz">A -> Z</option>
+				<option value="zta">Z -> A</option>
+				<option value="best-seller">Bán chạy</option>
+			</select>
+		</div>
+	</div>
+	<hr>
+
+	<!-- Khung sản phẩm -->
+	<div class="wrapper">
+		<!-- Danh mục, điều hướng -->
+		<div class="category">
+			<!-- Từng mục -->
+			<!-- Trái cây -->
+			<div class="item">
+				<button>
+					Trái cây <i class="icon i-chevron-down"></i>
+				</button>
+				<div class="dropdown">
+					<a href="#">Sản phẩm 1</a>
+					<a href="#">Sản phẩm 2</a>
+				</div>
+			</div>
+
+			<!-- Rau củ -->
+			<div class="item">
+				<button>
+					Rau củ <i class="icon i-chevron-down"></i>
+				</button>
+				<div class="dropdown show">
+					<a href="#">Sản phẩm 1</a>
+					<a href="#">Sản phẩm 2</a>
+				</div>
+			</div>
+			<!-- Thực phẩm khác -->
+			<div class="item">
+				<button>
+					Thực phẩm khác <i class="icon i-chevron-down"></i>
+				</button>
+				<div class="dropdown">
+					<a href="#">Sản phẩm 1</a>
+					<a href="#">Sản phẩm 2</a>
+				</div>
+			</div>
+		</div>
+		<!-- Nhóm sản phẩm với thanh tìm kiếm nhỏ-->
+		<div class="product-wrapper">
+			<!-- Nhóm thanh tìm kiếm -->
+			<div class="search-wrapper">
+				<div class="search">
+					<input placeholder="Tìm kiếm...">
+					<button><i class="icon i-search"></i></button>
+				</div>
+				<p class="product-count">Có tất cả {x} sản phẩm.</p>
+			</div>
+
+			<!-- Danh sách sản phẩm -->
+			<div class="product-list">
+				<!-- Component sản phẩm -->
+				<div class="product-card">
+					<img src="" alt="Ảnh mặt hàng">
+					<h1>{Tên mặt hàng}</h1>
+					<p>Mô tả: Lorem ipsum</p>
+					<hr>
+					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
+					<div class="button-layout">
+						<div class="count-field">
+							<button>-</button>
+							<input type="number" min="0" max="99" value="1">
+							<button>+</button>
+						</div>
+						<button class="default-btn">Thêm vào giỏ <i class="icon i-shopping-cart-light"></i></button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Chân trang -->
+	<footer>
+		<div class="footer-wrapper">
+			<h1>Thiendev's Shop</h1>	
+			<div class="footer-list">
+				<h1>Liên hệ:</h1>
+				<a href="mailto:thienlu2007@gmail.com">Email: thienlu2007@gmail.com</a>
+				<a href="#">Số điện thoại: +84 0123456789</a>
+			</div>
+			<div class="footer-list">
+				<h1>Điều hướng:</h1>
+				<a href="index.html">Trang chủ</a>
+				<a href="product.html">Sản phẩm</a>
+				<a href="contact.html">Liên hệ</a>
+				<a href="login.html">Đăng nhập/Đăng kí</a>
+				<a href="#header">Quay lại đầu trang</a>
+			</div>
+			<div class="footer-list">
+				<h1>Đăng kí:</h1>
+				<p>Đăng kí lần đầu để nhận khuyến mãi lớn!!</p>
+				<a href="register.html"><button class="default-btn">Đăng kí ngay!</button></a>
+
+			</div>
+		</div>
+		<p>&copy; Copyright 2025, <a href="#">thien.dev</a> - All Rights Reserved.</p>
+	</footer>
+	
+</body>
+</html>

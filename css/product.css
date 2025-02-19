@@ -1,0 +1,186 @@
+/*Phần đầu trang*/
+
+.intro {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 30px;
+	height: 150px;
+	flex-wrap: wrap;
+}
+
+.path-nav, .sort-wrapper {
+	align-self: flex-end;
+}
+.path-nav > a:hover {
+	text-decoration: underline;
+}
+.path-nav > a::after {
+	content: " / ";
+}
+	/*Chữ tiêu đề*/
+
+.heading {
+	text-align: center;
+}
+.heading > h1 {
+	font-size: 48px;
+	margin-bottom: 0;
+}
+.sort-wrapper > select {
+	min-width: 120px;
+	padding: 2px 5px;
+	border-radius: 10px;
+}
+
+/*Nhóm*/
+
+.wrapper {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0;
+	min-height: 500px;
+}
+/*.category, .product-wrapper {
+	border: 1px black solid;
+}*/
+
+	/*Điều hướng*/
+.category {
+	min-width: 200px;
+	background: var(--nav);
+	padding: 10px 20px;
+	border-radius: 10px;
+	flex-grow: 0;
+	height: 320px;
+}
+.item > button {
+	width: 200px;
+	background: #BCD38B;
+	margin: 5px 0;
+	padding: 8px 20px;
+	text-align: left;
+	font-size: 18px;
+	border: 0;
+}
+.item > button:hover {
+	opacity: 0.9;
+	text-decoration: underline;
+}
+.item > button > i {
+	float: right;
+}
+.item > .dropdown {
+	display: block;
+	height: 0px;
+	overflow: hidden;
+}
+.dropdown.show {
+	height: fit-content;
+}
+.item > .dropdown > a {
+	display: block;
+	padding: 4px 20px;
+}
+
+/*Sản phẩm*/
+.product-wrapper {
+	min-width: 926px;
+}
+
+	/*Thanh tìm kiếm*/
+.search-wrapper {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+}
+
+/*Danh sách sản phẩm*/
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+	/*Thẻ Sản phẩm*/
+.product-card {
+	display: flex;
+	flex-direction: column;
+	min-width: 250px;
+	height: fit-content;
+	border: 1px black solid;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.product-card > img {
+	width: 100%;
+	min-height: 120px;
+	background: #BCD38B;
+	border-radius: 10px 10px 0 0;
+}
+
+.product-card > h1 {
+	font-size: 24px;
+	margin: 10px;
+}
+.product-card > * {
+	text-align: center;
+}
+.product-card > p {
+	margin: 4px 0;
+}
+
+.product-card > hr {
+	width: 90%;
+}
+/*Giá*/
+.product-card > .cost {
+	text-align: left;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 5px 20px;
+	margin: 0;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.cost > span {
+	font-size: 24px;
+}
+/*Layout nút*/
+.button-layout {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 20px;
+	margin: 10px 20px;
+	height: 40px;
+}
+.count-field {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.count-field > button {
+	background-color: var(--body-text);
+	color: var(--nav);
+	border: 0;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	margin: 0 2px;
+}
+.count-field > button:hover {
+	font-size: 18px;
+}
+.count-field > input {
+	text-align: center;
+	min-width: 40px;
+	width: 40px;
+	height: 30px;
+	border: 1px solid var(--body-text);
+	box-sizing: border-box;
+}
+.count-field > input:focus {
+	border: 1px solid var(--body-text);
+}
+
