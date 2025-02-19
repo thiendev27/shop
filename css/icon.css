@@ -1,0 +1,88 @@
+/*Created by thiendev using Gemini AI*/
+
+.icon::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin: 0 1px;
+}
+
+.i-chevron-down::before {
+  background-image: url("../res/icon/chevron-down.svg");
+}
+
+.i-chevron-left::before {
+  background-image: url("../res/icon/chevron-left.svg");
+}
+
+.i-chevron-right::before {
+  background-image: url("../res/icon/chevron-right.svg");
+}
+
+.i-chevron-up::before {
+  background-image: url("../res/icon/chevron-up.svg");
+}
+
+.i-facebook::before {
+  background-image: url("../res/icon/facebook.svg");
+}
+
+.i-github::before {
+  background-image: url("../res/icon/github.svg");
+}
+
+.i-globe::before {
+  background-image: url("../res/icon/globe.svg");
+}
+
+.i-help-circle::before {
+  background-image: url("../res/icon/help-circle.svg");
+}
+
+.i-home::before {
+  background-image: url("../res/icon/home.svg");
+}
+
+.i-login-facebook::before {
+  background-image: url("../res/icon/login-facebook.svg");
+}
+
+.i-login-gmail-dark::before {
+  background-image: url("../res/icon/login-gmail-dark.svg");
+}
+
+.i-mail::before {
+  background-image: url("../res/icon/mail.svg");
+}
+
+.i-phone-call::before {
+  background-image: url("../res/icon/phone-call.svg");
+}
+
+.i-search::before {
+  background-image: url("../res/icon/search.svg");
+}
+
+.i-shopping-cart-light::before {
+  background-image: url("../res/icon/shopping-cart-light.svg");
+}
+
+.i-shopping-cart::before {
+  background-image: url("../res/icon/shopping-cart.svg");
+}
+
+.i-smartphone::before {
+  background-image: url("../res/icon/smartphone.svg");
+}
+
+.i-user::before {
+  background-image: url("../res/icon/user.svg");
+}
+
+.i-youtube::before {
+  background-image: url("../res/icon/youtube.svg");
+}

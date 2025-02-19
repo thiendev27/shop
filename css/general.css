@@ -1,0 +1,233 @@
+@font-face {
+	font-family: "Calistoga";
+	src: url("../res/font/Calistoga.ttf");
+}
+@font-face {
+	font-family: "Nunito";
+	src: url("../res/font/Nunito.ttf");
+}
+
+/*Biến*/
+:root {
+	--nav: #F8F6E7;
+	--body-text: #434738;
+}
+/*Phần tử toàn cục*/
+
+* {
+	color: var(--body-text);
+	font-family: "Nunito";
+}
+
+::selection {
+	background: lightpink;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	background: white;
+}
+img {
+	width: 16px;
+	height: 16px;
+}
+input {
+	min-width: 200px;
+	border: 1px var(--body-text) solid;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	height: 35px;
+}
+body {
+	margin: 0;
+	height: 1000px; /*Thử nghiệm cuộn*/
+}
+
+/*Nút mặc định*/
+.default-btn {
+	background: var(--body-text);
+	color: var(--nav);
+	font-size: 14px;
+	padding: 10px 20px;
+	border: 2px var(--body-text) solid;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.default-btn:hover {
+	border: 2px var(--nav) solid;
+}
+
+/*	Thanh điều hướng trên*/
+.header {
+	background: var(--nav);
+	display: flex;
+	padding: 17px 24.5px;
+	justify-content: space-between;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+.nav-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+/*Tiêu đề*/
+.header h1 {
+	font-family: "Calistoga";
+	margin: 0 0 5px 0;
+	font-size: 36px;
+}
+
+.nav-wrapper > a:hover {
+	background: none;
+}
+
+/*Thanh thông tin liên lạc: email, sđt*/
+.nav-contact {
+	display: flex;
+	gap: 10px;
+	justify-content: right;
+}
+
+/*Nhóm icon và thông tin liên lạc
+ và Liên kết xã hội*/
+
+.social-contact {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding-left: 10px;
+}
+
+.social-contact > a {
+	padding: 5px 10px;
+}
+
+/*Danh sách mục điều hướng (ul)*/
+.nav-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-list a , .nav-contact > a {
+	padding: 10px 20px;
+	display: block;
+}
+.nav-contact > a > i {
+	margin-right: 8px;
+}
+
+/*Danh sách thả xuống*/
+.dropdown {
+	position: relative;
+}
+
+/*Icon mũi tên xuống của mục sản phẩm*/
+.dropdown > a > i {
+	float: right;
+}
+.dropdown:hover > a > i {
+	transform: rotate(-180deg);
+}
+
+.dropdown-content {
+	display: none;
+	background: var(--nav);
+	position: absolute;
+	top: 38px;
+	z-index: 1;
+	flex-direction: column;
+	min-width: 200px;
+	box-shadow: 0px 0px 16px 0.5px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+	display: flex;
+}
+
+/*Thanh tìm kiếm*/
+
+.search {
+	position: relative;
+	height: 32px;
+	align-self: center;
+}
+
+.search > input {
+	height: 100%;
+	width: 100%;
+}
+.search > button {
+	position: absolute;
+	height: 100%;
+	width: 35px;
+	right: 0;
+	border: 0;
+	border-radius: 10px;
+	background: none;
+}
+.search > button:hover {
+	border: 1px var(--body-text) dashed;
+}
+
+.user-info {
+	margin: 20px;
+}
+.user-info > a {
+	padding: 5px 10px;
+	box-sizing: border-box;
+} 
+
+/*Chân trang*/
+footer {
+	min-height: 70px;
+	background: #495551;
+}
+footer * {
+	color: var(--nav);
+}
+footer a:hover {
+	background: transparent;
+	text-decoration: underline;
+}
+.footer-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+.footer-wrapper > h1 {
+	font-family: "Calistoga";
+	font-size: 36px;
+	align-self: center;
+	max-width: 200px;
+	text-align: center;
+}
+.footer-list {
+	display: flex;
+	flex-direction: column;
+}
+.footer-list > h1 {
+	margin-bottom: 0;
+	font-size: 24px;
+}
+footer > p {
+	text-align: center;
+	padding: 20px 0;
+}
+.footer-list > a > button {
+	width: 150px;
+	box-shadow: 0px 0px 16px 2px var(--nav);
+}
+.footer-list > a > button:hover {
+	box-shadow: 0px 0px 16px 4px var(--nav);
+}

@@ -1,0 +1,133 @@
+/*Phần thân trang*/
+.section1, .section2, .best-seller, .credit {
+	min-height: 450px;
+	position: relative;
+}
+
+.section1 {
+	background-image: url("../res/photo/vegetable.jpg");
+	margin: 0;
+	background-size: 1366px;
+}
+.prev, .next {
+	min-width: 33px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	border: 0;
+	background: white;
+	opacity: 0.8;
+}
+.prev:hover , .next:hover {
+	opacity: 0.5;
+}
+.next {
+	right: 0 !important;
+}
+
+/*intro*/
+.intro1, .intro2, .intro3 {
+	background: #D9EF82;
+	min-height: inherit;
+	max-width: 404px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+.intro1 {
+	margin-left: 148px;
+}
+.intro2 {
+	position: absolute;
+	right: 114px;
+}
+.intro1 h1, .intro2 h1 {
+	font-size: 48px;
+	margin: 0;
+}
+.section2 {
+	display: flex;
+	justify-content: space-between;
+	background-image: url("../res/photo/salad.jpg");
+	background-size: 1366px;
+	background-repeat: no-repeat;
+}
+
+/*Best seller*/
+.best-seller {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #F8F6E7;
+}
+.slideshow {
+	width: clamp(40px, 700px, 1200px);
+	padding: 30px 10px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background: white;
+	border-radius: 10px;
+}
+.slideshow {
+	flex: 0.5 1 auto;
+}
+.seller-list {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	overflow-x: scroll;
+	padding: 10px 5px;
+	scroll-behavior: smooth;
+	cursor: grab;
+}
+.seller-list::-webkit-scrollbar {
+	display: none;
+}
+
+.seller-card {
+	width: 250px;
+	height: 280px;
+	flex-shrink: 0;
+	margin: 0 50px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2)
+}
+.seller-card > img {
+	width: 250px;
+	height: 220px;
+	background: #AEC554;
+}
+.seller-card > h4 {
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+/*Credit*/
+.credit {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url("../res/photo/adonyi-foto.jpg");
+	background-size: 1366px;
+	background-position-y: -350px;
+}
+.credit > img {
+	width: 160px;
+	height: 160px;
+ 	background: #B1B2B5;
+ 	border-radius: 50%;
+ 	text-align: center;
+
+}
+.credit > p {
+	max-width: 400px;
+	text-align: center;
+}

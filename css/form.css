@@ -1,0 +1,73 @@
+/*Chung cho cả đăng nhập và đăng kí*/
+
+.wrapper {
+	display: flex;
+	height: 648px;
+}
+
+.form-wrapper, .first-time {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-wrapper {
+	flex: 0.7 1 70%;
+	padding: 40px;
+}
+.form-wrapper {
+	text-align: center;
+}
+.form-wrapper > h1 {
+	margin: 0;
+}
+
+.form-wrapper > form {
+	background: #F4F7F0;
+	display: flex;
+	min-width: 359px;
+	flex-direction: column;
+	padding: 60px;
+	border: 1px var(--body-text) dashed;
+	border-radius: 10px;
+	box-shadow: 0 2px 16px 1px var(--body-text);
+}
+
+/*Ô nhập thông tin*/
+.form-wrapper > form > input {
+	margin-bottom: 10px;
+}
+
+/*Quên mật khẩu, nhớ mật khẩu*/
+#forget, .remember-wrapper {
+	align-self: flex-end;
+	margin: 10px;
+	user-select: none;
+}
+#remember {
+	height: 16px;
+	min-width: 16px;
+	border-radius: 50%;
+}
+
+
+/*Nút*/
+.form-wrapper > form > button {
+	align-self: center;
+}
+
+/*Đăng nhập bằng gmail hoặc sđt - icon*/
+.form-wrapper > form > p {
+	margin: 20px;
+}
+.form-wrapper > form > p > a {
+	padding: 5px 10px;
+}
+
+/*Lần đầu*/
+.first-time {
+	flex: 0.3 1 30%;
+	background: #BCD38B;
+}

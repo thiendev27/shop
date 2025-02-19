@@ -1,0 +1,71 @@
+.intro {
+	text-align: center;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 85px;
+}
+
+.info-wrapper, .feedback {
+	box-shadow: 0 0 36px 1px var(--body-text);
+}
+
+.info-wrapper {
+	background: #F4F7F0;
+	flex-grow: 1;
+	padding: 30px;
+	border-radius: 10px 0 0 10px;
+}
+
+.info > h1, .faq > h1 {
+	text-align: center;
+	font-size: 24px;
+	margin: 20px;
+}
+.info > a, .faq > a {
+	display: block;
+	padding: 10px 20px;
+}
+.info > a > i {
+	margin-right: 15px;
+}
+
+.feedback {
+	background: #BCD38B;
+	padding: 30px;
+	flex-grow: 1;
+	border-radius: 0 10px 10px 0;
+}
+legend {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.feedback > fieldset{
+	height: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	border-color: var(--body-text);
+	border-style: solid;
+}
+.feedback > fieldset > input {
+	width: 100%;
+}
+textarea {
+	width: 100%;
+	height: 159px;
+	border: 1px var(--body-text) solid;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	resize: none;
+}
