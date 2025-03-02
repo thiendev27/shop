@@ -1,0 +1,45 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	padding: 83px;
+	padding-bottom: 0;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.container > img {
+	flex: 0.5 1 400px;
+  	height: 444px;
+	background: #BCD38B;
+}
+
+.info {
+	flex: 0.5 1 50%;
+	padding: 30px;
+	padding-top: 0;
+}
+.info > h1 {
+	margin: 0;
+}
+.info li > span {
+	font-weight: bold;
+}
+
+.info > h2 {
+	text-decoration: underline;
+}
+.info > h2 > span {
+	font-size: 18px;
+	font-weight: lighter;
+}
+.button-layout {
+	justify-content: flex-start;
+}
+
+.feedback {
+	padding: 20px 83px;
+/*	padding-top: 0;*/
+}
+
+.rated > h4 {
+	display: inline-block;
+}

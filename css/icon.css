@@ -86,3 +86,11 @@
 .i-youtube::before {
   background-image: url("../res/icon/youtube.svg");
 }
+
+.i-full-star::before {
+  background-image: url("../res/icon/full-star.svg");
+}
+
+.i-empty-star::before {
+  background-image: url("../res/icon/empty-star.svg");
+}
