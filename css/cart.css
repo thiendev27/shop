@@ -1,0 +1,30 @@
+/*#cart {
+	display: none;
+}*/
+#empty {
+	display: none;
+}
+
+.heading > * {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+.payment {
+	padding: 20px;
+	height: fit-content;
+	flex: 0.15 1 auto;
+/*	position: sticky;
+	top: 0;*/
+}
+.payment > h3 {
+	margin: 5px 0;
+}
+.payment > label {
+	display: block;
+	margin: 10px 0;
+}
+
