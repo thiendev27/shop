@@ -7,17 +7,19 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: baseline;
+	padding: 15%;
+	box-sizing: border-box;
 }
 .heading > h1 {
 	font-family: "Calistoga";
 	font-size: 48px;
 	margin: 0;
-	font-weight: bolder;
 	text-transform: uppercase;
 }
 .heading > p {
 	font-size: 20px;
+	max-width: 500px;
 }
 
 /*Giới thiệu chất lượng*/
@@ -53,28 +55,100 @@
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+/**/
+/*Giới thiệu thêm*/
+.intro-more {
+	min-height: 350px;
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 20px;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	position: relative;
+}
+
+
+/*>>> intro more*/
+
+.img-gallery {
+	display: flex;
+	justify-content: space-evenly;
+	flex: 0.5 1 600px;
+	flex-wrap: wrap;
+}
+.img-gallery > img {
+	display: inline-block;
+	width: 240px;
+	height: 202px;
+	background: #BCD38B;
+	box-shadow: 0 0 16px 0 gray;
+}
+.img-gallery > img:nth-child(1) {
+    transform: rotate(-5deg);
+}
+
+.img-gallery > img:nth-child(2) {
+    transform: rotate(5deg);
+}
+
+.img-gallery > img:nth-child(3) {
+    transform: rotate(2deg);
+}
+
+/**/
+/*Best seller*/
+
+.best-seller > .info > * {
+	text-align: center;
+}
+
+/**/
+
+/*Phần các loại mặt hàng*/
+.category > h1 {
+	text-align: center;
+}
+
+.category > .product-slideshow {
+	justify-content: center;
+	gap: 100px;
+}
+.category > .product-slideshow > a {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 26px;
+	font-weight: bold;
+	border: 0;
+	border-radius: 0;
+	background: rgba(67, 71, 56, 0.5);
+	color: var(--nav);
+}
+
 
 
 /*Credit*/
-/*.credit {
+.credit {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;*/
+	align-items: center;
 /*	background: url("../res/photo/adonyi-foto.jpg");*/
-/*	background-size: 1366px;
+	background-size: 1366px;
 	background-position-y: -350px;
+	height: 450px;
 }
 .credit > img {
 	width: 160px;
 	height: 160px;
- 	background: #B1B2B5;
- 	border-radius: 50%;
  	text-align: center;
-
+ 	border-radius: 50%;
+ 	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
 }
 .credit > p {
 	max-width: 400px;
 	text-align: center;
+	font-size: 18px;
 }
-*/
