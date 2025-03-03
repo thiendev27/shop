@@ -4,7 +4,13 @@
 }
 @font-face {
 	font-family: "Nunito";
-	src: url("../res/font/Nunito.ttf");
+	src: url("../res/font/Nunito-Regular.ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Nunito";
+	src: url("../res/font/Nunito-ExtraBold.ttf");
+	font-weight: bold;
 }
 
 /*Biến*/
@@ -16,7 +22,11 @@
 
 * {
 	color: var(--body-text);
+}
+body {
 	font-family: "Nunito";
+	margin: 0;
+	height: 1000px; /*Thử nghiệm cuộn*/
 }
 
 ::selection {
@@ -41,10 +51,7 @@ input {
 	box-sizing: border-box;
 	height: 35px;
 }
-body {
-	margin: 0;
-	height: 1000px; /*Thử nghiệm cuộn*/
-}
+
 
 /*Nút mặc định*/
 .default-btn {

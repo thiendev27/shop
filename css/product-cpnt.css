@@ -29,7 +29,8 @@
 	height: fit-content;
 	border: 1px black solid;
 	border-radius: 10px;
-	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+/*	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);*/
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
 }
 .product-card a {
 	width: 100%;
@@ -130,9 +131,15 @@
 	justify-content: space-around;
 }
 .product-slideshow > .product-card {
-	width: 280px;
-	height: 300px;
+	/*width: 280px;
+	height: 300px;*/
+	min-width: 140px;
+	width: 200px;
+	height: 220px;
+}
+.product-slideshow > .product-card > h1 {
+	font-size: 18px;
 }
 .product-slideshow a {
-	height: 200px;
+	height: 140px;
 }
