@@ -94,3 +94,6 @@
 .i-empty-star::before {
   background-image: url("../res/icon/empty-star.svg");
 }
+.i-trash::before {
+  background-image: url("../res/icon/trash.svg");
+}
