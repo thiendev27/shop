@@ -9,7 +9,7 @@
 }
 
 .info-wrapper, .feedback {
-	box-shadow: 0 0 36px 1px var(--body-text);
+	box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
 }
 
 .info-wrapper {

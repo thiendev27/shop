@@ -32,7 +32,7 @@
 	padding: 60px;
 	border: 1px var(--body-text) dashed;
 	border-radius: 10px;
-	box-shadow: 0 2px 16px 1px var(--body-text);
+	box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*Ô nhập thông tin*/

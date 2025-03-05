@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="css/cart.css">
 	<link rel="stylesheet" href="css/product-cpnt.css">
 	<title>Giỏ hàng</title>
+	<script defer src="js/general.js"></script>
+	<script defer src="js/home.js"></script>
+	<script defer src="js/cart.js"></script>
 </head>
 <!-- Giỏ hàng -->
 <body>
@@ -46,9 +49,9 @@
 					<!-- Sản phẩm -->
 					<a href="products.html">Sản phẩm <i class="icon i-chevron-down"></i></a>
 					<div class="dropdown-content">
-						<a href="#">Trái cây</a>
-						<a href="#">Rau củ</a>
-						<a href="#">Thực phẩm khác</a>
+						<a href="products.html?type=trai-cay">Trái cây</a>
+						<a href="products.html?type=rau-cu">Rau củ</a>
+						<a href="products.html?type=thuc-pham-khac">Thực phẩm khác</a>
 					</div>
 				</div>
 				<!-- Liên hệ -->
@@ -62,7 +65,7 @@
 	<div id="empty">
 		<div class="heading">
 			<h1>Bạn hiện không lưu bất kì sản phẩm nào!</h1>
-			<h4>Bắt đầu mua sắm <a href="#" style="text-decoration: underline;">tại đây...</a></h4>
+			<h4>Bắt đầu mua sắm <a href="products.html" style="text-decoration: underline;">tại đây...</a></h4>
 		</div>
 	</div>
 	<div id="cart">
@@ -74,143 +77,20 @@
 		<div class="container">
 			<div id="product-list">
 				<!-- Card -->
-				<div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
-					<h1>{Tên mặt hàng}</h1>
-					<p>Mô tả: Lorem ipsum</p>
-					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<h3>Số lượng:</h3>
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-					</div>
-				</div>
+				
 				<!--  -->
-				<div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
-					<h1>{Tên mặt hàng}</h1>
-					<p>Mô tả: Lorem ipsum</p>
-					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<h3>Số lượng:</h3>
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-					</div>
-				</div>
-				<div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
-					<h1>{Tên mặt hàng}</h1>
-					<p>Mô tả: Lorem ipsum</p>
-					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<h3>Số lượng:</h3>
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-					</div>
-				</div>
-				<div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
-					<h1>{Tên mặt hàng}</h1>
-					<p>Mô tả: Lorem ipsum</p>
-					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<h3>Số lượng:</h3>
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-					</div>
-				</div>
-				<div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
-					<h1>{Tên mặt hàng}</h1>
-					<p>Mô tả: Lorem ipsum</p>
-					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<h3>Số lượng:</h3>
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-					</div>
-				</div>
-				<div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
-					<h1>{Tên mặt hàng}</h1>
-					<p>Mô tả: Lorem ipsum</p>
-					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<h3>Số lượng:</h3>
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-					</div>
-				</div>
-				<div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
-					<h1>{Tên mặt hàng}</h1>
-					<p>Mô tả: Lorem ipsum</p>
-					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<h3>Số lượng:</h3>
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-					</div>
-				</div>
-				<div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
-					<h1>{Tên mặt hàng}</h1>
-					<p>Mô tả: Lorem ipsum</p>
-					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<h3>Số lượng:</h3>
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-					</div>
-				</div>
-
+				
 			</div>
 
 			<div class="payment">
 				<h3>Danh sách sản phẩm:</h3>
-				<ul>
-					<li>Sản phẩm 1</li>
-					<li>Sản phẩm 2</li>
+				<ul id="added-product">
 				</ul>
 				<h3>Chi phí:</h3>
-				<ul>
-					<li>Tiền hàng: 100.000đ</li>
-					<li>Phí ship: 100.000đ</li>
-					<li>Phí dịch vụ khác: 100.000đ</li>
+				<ul id="cost">
+					
 				</ul>
-				<h2><span>Tổng:</span><span>300.000đ</span></h2>
+				<h2><span>Tổng:</span><span id="total">300.000đ</span></h2>
 
 				<label for="pay-method">Phương thức:
 					<select id="pay-method">
@@ -229,21 +109,6 @@
 	<div class="interested">
 		<h1>Có thể bạn quan tâm:</h1>
 		<div class="product-slideshow">
-			<!-- Card -->
-			<div class="product-card">
-				<a href="#">Ảnh mặt hàng</a>
-				<h1>#1<br>{Tên mặt hàng}</h1>
-			</div>
-			<!--  -->
-			<div class="product-card">
-				<a href="#">Ảnh mặt hàng</a>
-				<h1>#1<br>{Tên mặt hàng}</h1>
-			</div>
-			<div class="product-card">
-				<a href="#">Ảnh mặt hàng</a>
-				<h1>#1<br>{Tên mặt hàng}</h1>
-			</div>
-			
 		</div>
 	</div>
 

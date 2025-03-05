@@ -2,24 +2,41 @@
 
 /*Phần đầu trang*/
 .heading {
-	height: 520px;
-	background: #BCD38B;
+	min-height: 520px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: baseline;
 	padding: 15%;
 	box-sizing: border-box;
+	position: relative;
+
+}
+.heading::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	display: block;
+	background-image: url("../res/photo/vegetable.jpg");
+	background-size: cover;
+/*	background-color: #BCD38B;*/
+	filter: brightness(0.5);
+	width: 100%;
+	height: 100%;
 }
 .heading > h1 {
 	font-family: "Calistoga";
 	font-size: 48px;
 	margin: 0;
 	text-transform: uppercase;
+	color: var(--nav);
 }
 .heading > p {
 	font-size: 20px;
 	max-width: 500px;
+	color: var(--nav);
 }
 
 /*Giới thiệu chất lượng*/
@@ -49,7 +66,7 @@
 }
 .intro-quality > .card > img {
 	display: block;
-	background: #BCD38B;
+/*	background: #BCD38B;*/
 	width: 200px;
 	height: 200px;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -71,19 +88,26 @@
 
 
 /*>>> intro more*/
-
+.intro-more {
+	background: #F4F7F0;
+}
+.intro-more > .info > p {
+	max-width: 400px;
+}
 .img-gallery {
 	display: flex;
 	justify-content: space-evenly;
 	flex: 0.5 1 600px;
 	flex-wrap: wrap;
 }
+
 .img-gallery > img {
 	display: inline-block;
 	width: 240px;
 	height: 202px;
 	background: #BCD38B;
 	box-shadow: 0 0 16px 0 gray;
+	object-fit: cover;
 }
 .img-gallery > img:nth-child(1) {
     transform: rotate(-5deg);
@@ -125,6 +149,7 @@
 	border-radius: 0;
 	background: rgba(67, 71, 56, 0.5);
 	color: var(--nav);
+
 }
 
 
@@ -139,16 +164,34 @@
 	background-size: 1366px;
 	background-position-y: -350px;
 	height: 450px;
+	position: relative;
+}
+
+/*Hình nền*/
+.credit::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	display: block;
+	background-image: url("../res/photo/credit-bg.jpg");
+	background-size: cover;
+/*	background-color: #BCD38B;*/
+	filter: brightness(0.6);
+	width: 100%;
+	height: 100%;
 }
 .credit > img {
 	width: 160px;
 	height: 160px;
  	text-align: center;
  	border-radius: 50%;
- 	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+ 	box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.4);
 }
 .credit > p {
 	max-width: 400px;
 	text-align: center;
 	font-size: 18px;
+	color: var(--nav);
 }

@@ -8,6 +8,13 @@
 	<link rel="stylesheet" href="css/product-cpnt.css">
 	<link rel="stylesheet" href="css/single-product.css">
 	<title>{Tên sản phẩm}</title>
+	<script defer src="js/general.js"></script>
+	<script defer src="js/home.js"></script>
+	<script defer src="js/single-product.js"></script>
+	<script >
+		window.onload = function() {
+  		addIntroCard(3);};
+	</script>
 </head>
 <!-- Trang sản phẩm riêng -->
 <body>
@@ -46,9 +53,9 @@
 					<!-- Sản phẩm -->
 					<a href="products.html">Sản phẩm <i class="icon i-chevron-down"></i></a>
 					<div class="dropdown-content">
-						<a href="#">Trái cây</a>
-						<a href="#">Rau củ</a>
-						<a href="#">Thực phẩm khác</a>
+						<a href="products.html?type=trai-cay">Trái cây</a>
+						<a href="products.html?type=rau-cu">Rau củ</a>
+						<a href="products.html?type=thuc-pham-khac">Thực phẩm khác</a>
 					</div>
 				</div>
 				<!-- Liên hệ -->
@@ -75,7 +82,7 @@
 				<li>Ngày nhập gần nhất: <span>2 ngày trước</span></li>
 				<li>Thời gian bảo quản tối đa: <span>7 ngày</span></li>
 			</ul>
-			<h2>Giá: <span>70.000đ/kg</span></h2>
+			<h2>Giá: <span id="cost-label">70.000đ/kg</span></h2>
 			<hr>
 			<div class="star">
 				<i>* 4/5</i>
@@ -114,22 +121,7 @@
 	</div>
 	<div class="interested">
 		<h1>Có thể bạn quan tâm:</h1>
-		<div class="product-slideshow">
-			<!-- Card -->
-			<div class="product-card">
-				<a href="#">Ảnh mặt hàng</a>
-				<h1>#1<br>{Tên mặt hàng}</h1>
-			</div>
-			<!--  -->
-			<div class="product-card">
-				<a href="#">Ảnh mặt hàng</a>
-				<h1>#1<br>{Tên mặt hàng}</h1>
-			</div>
-			<div class="product-card">
-				<a href="#">Ảnh mặt hàng</a>
-				<h1>#1<br>{Tên mặt hàng}</h1>
-			</div>
-			
+		<div class="product-slideshow best-seller">
 		</div>
 	</div>
 

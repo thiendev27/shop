@@ -68,9 +68,11 @@
 	display: block;
 	height: 0px;
 	overflow: hidden;
+	transition: 0.2s;
 }
 .dropdown.show {
-	height: fit-content;
+	height: 60px;
+/*	height: fit-content;*/
 }
 .item > .dropdown > a {
 	display: block;
