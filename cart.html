@@ -7,17 +7,21 @@
 	<link rel="stylesheet" href="css/general.css">
 	<link rel="stylesheet" href="css/cart.css">
 	<link rel="stylesheet" href="css/product-cpnt.css">
+	<link rel="icon" type="image/x-icon" href="res/icon/favicon.svg">
 	<title>Giỏ hàng</title>
 	<script defer src="js/general.js"></script>
 	<script defer src="js/home.js"></script>
+	<script defer src="js/add-to-cart.js"></script>
+	<script defer src="js/nav.js"></script>
 	<script defer src="js/cart.js"></script>
+	<script defer src="js/counter.js"></script>
 </head>
 <!-- Giỏ hàng -->
 <body>
 	<!-- Thanh điều hướng -->
 	<div class="header" id="header">
 		<div class="nav-wrapper">
-			<a href="index.html"><h1>Thiendev's Shop</h1></a>
+			<a href="index.html"><h1><i class="icon i-logo"></i>Thiendev's Shop</h1></a>
 			<div class="social-contact">
 				<a href="#" title="Facebook"><i class="icon i-facebook"></i></a>
 				<a href="#" title="Youtube"><i class="icon i-youtube"></i></a>
@@ -91,17 +95,30 @@
 					
 				</ul>
 				<h2><span>Tổng:</span><span id="total">300.000đ</span></h2>
-
-				<label for="pay-method">Phương thức:
-					<select id="pay-method">
-						<option value="e-wallet">Ví điện tử</option>
-						<option value="received">Khi nhận được hàng</option>
-					</select>
-				</label>
-				<label for="address">Địa chỉ:
-					<input id="address" placeholder="VD: Xóm 1 Xã Hậu Thành">
-				</label>
-				<button class="default-btn">Đặt hàng ngay!</button>
+				<form action="">
+					<label for="pay-method">Phương thức:
+						<select id="pay-method">
+							<option value="e-wallet">Ví điện tử</option>
+							<option value="received">Khi nhận được hàng</option>
+						</select>
+					</label>
+					<label for="name">Địa chỉ:
+						<input id="name" placeholder="VD: Nguyễn Văn A" required>
+					</label>
+					<label for="address">Địa chỉ:
+						<input id="address" placeholder="VD: Xóm 1 Xã Hậu Thành" required>
+					</label>
+					<label for="phone-number">Số điện thoại:
+						<input id="phone-number" type="number" placeholder="VD: 0123456789" required>
+					</label>
+					<label for="email">Email:
+						<input id="email" placeholder="VD: abc@gmail.com" required>
+					</label>
+					<label for="msg">Lưu ý:
+						<textarea id="msg" placeholder="Lưu ý thêm(Nếu có)" ></textarea>
+					</label>
+					<button class="default-btn">Đặt hàng ngay!</button>
+				</form>
 			</div>
 		</div>
 	</div>

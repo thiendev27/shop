@@ -7,9 +7,11 @@
 	flex-wrap: wrap;
 }
 .container > img {
+	width: 400px;
 	flex: 0.5 1 400px;
   	height: 444px;
 	background: #BCD38B;
+	object-fit: cover;
 }
 
 .info {

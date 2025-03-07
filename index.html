@@ -7,8 +7,10 @@
 	<link rel="stylesheet" href="css/general.css">
 	<link rel="stylesheet" href="css/product-cpnt.css">
 	<link rel="stylesheet" href="css/home.css">
+	<link rel="icon" type="image/x-icon" href="res/icon/favicon.svg">
 	<title>Chào mừng tới thiendev's Shop</title>
 	<script src="js/general.js"></script>
+	<script defer src="js/nav.js"></script>
 	<script src="js/home.js"></script>
 	<script >
 		window.onload = function() {
@@ -20,7 +22,7 @@
 	<!-- Thanh điều hướng -->
 	<div class="header" id="header">
 		<div class="nav-wrapper">
-			<a href="index.html"><h1>Thiendev's Shop</h1></a>
+			<a href="index.html"><h1><i class="icon i-logo"></i>Thiendev's Shop</h1></a>
 			<div class="social-contact">
 				<a href="#" title="Facebook"><i class="icon i-facebook"></i></a>
 				<a href="#" title="Youtube"><i class="icon i-youtube"></i></a>
@@ -66,7 +68,7 @@
 	</div>
 	<!-- Thân trang -->
 
-	<div class="heading">
+	<div class="heading bg">
 		<h1>THỰC PHẨM SẠCH CHO SỨC KHỎE VÀNG</h1>
 		<p>Chúng tôi tin rằng thực phẩm tươi ngon là nền tảng của một cuộc sống khỏe mạnh. Hãy để chúng tôi giúp bạn xây dựng điều đó!</p>
 		<a class="default-btn" href="products.html">Mua sắm ngay!</a>
@@ -79,7 +81,7 @@
 			<p>Khi tiền sản phẩm trên 99K</p>
 		</div>
 		<div class="card">
-			<img src="res/icon/intro/safe.png" alt="Logo">
+			<a href="products.html"><img src="res/icon/intro/safe.png" alt="Logo"></a>
 			<h2>Rau sạch</h2>
 			<p>Được đóng gói cẩn thận</p>
 		</div>
@@ -89,7 +91,7 @@
 			<p>Sản phẩm đạt chuẩn, chất lượng cao</p>
 		</div>
 		<div class="card">
-			<img src="res/icon/intro/support.png" alt="Logo">
+			<a href="contact.html"><img src="res/icon/intro/support.png" alt="Logo"></a>
 			<h2>Hỗ trợ</h2>
 			<p>Hỗ trợ nhiệt tình, phản hồi nhanh chóng</p>
 		</div>
@@ -118,21 +120,22 @@
 		</div>
 	</div>
 
-	<div class="category">
+	<div class="category bg">
 		<h1>Các loại mặt hàng</h1>
 		<div class="product-slideshow">
-			<a href="products.html?type=trai-cay" class="product-card">Trái cây</a>
-			<a href="products.html?type=rau-cu" class="product-card">Rau củ</a>
-			<a href="products.html?type=thuc-pham-khac" class="product-card">Thực phẩm khác</a>
+			<a href="products.html?type=trai-cay" class="product-card bg">Trái cây</a>
+			<a href="products.html?type=rau-cu" class="product-card bg">Rau củ</a>
+			<a href="products.html?type=thuc-pham-khac" class="product-card bg">Thực phẩm khác</a>
 		</div>
 	</div>
 
 
 	<!-- Phần credit -->
-	<div class="credit">
+	<div class="credit bg">
 		<img src="res/icon/intro/top1.png" alt="Vòng nguyệt quế top 1">
-		<p>"Với lòng yêu nghề và sự tận tâm, Thiendev Shop tự hào được cộng đồng địa phương công nhận là một trong những cửa hàng uy tín, mang đến những sản phẩm chất lượng nhất." - 2025
+		<p>"Với lòng yêu nghề và sự tận tâm, Thiendev Shop tự hào được cộng đồng địa phương công nhận là một trong những cửa hàng uy tín, mang đến những sản phẩm chất lượng nhất."
 		</p>
+		<p>- Được công nhận bởi Uỷ ban nhân dân tỉnh Nghệ An năm 2025 -</p>
 	</div>
 
 	<!-- Chân trang -->

@@ -23,8 +23,19 @@
 .payment > h3 {
 	margin: 5px 0;
 }
-.payment > label {
-	display: block;
+.payment > form {
+	display: flex;
+	flex-direction: column;
+	width: inherit;
+	align-items: flex-start;
+}
+.payment > form > label {
+	display: flex;
+	gap: 10px;
 	margin: 10px 0;
+}
+.payment > form > label > textarea {
+	min-height: 100px;
+	resize: none;
 }
 

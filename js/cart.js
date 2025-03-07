@@ -4,11 +4,11 @@ const cost = document.getElementById("cost");
 const total = document.getElementById("total");
 let product_cost = 0
 
-function createCard(id, name, desc, cost){
+function createCard(id, name, desc, cost, img){
 	const card = document.createElement("div");
 	card.classList.add("product-card");
 	card.innerHTML = `
-		<a href="product.html?id=${id}">Ảnh mặt hàng</a>
+		<a href="product.html?id=${id}"><img src="${img}" alt="Ảnh mặt hàng"></a>
 		<h1>${name}</h1>
 		<p>${desc}</p>
 		<hr>
@@ -20,9 +20,16 @@ function createCard(id, name, desc, cost){
 				<input type="number" min="0" max="99" value="1">
 				<button>+</button>
 			</div>
-			<button class="default-btn">Xoá <i class="icon i-trash"></i></button>
 		</div>
 	`;
+	let btn = document.createElement("button");
+	btn.classList.add("default-btn");
+	btn.innerHTML = 'Xoá <i class="icon i-trash"></i>'
+	btn.addEventListener("click", function() {
+		deleteFromCart(id);
+		readCart();
+	})
+	card.appendChild(btn);
 	return card;
 };
 
@@ -39,11 +46,22 @@ function addCost(c){
 		<li>Phí dịch vụ khác: 100.000đ</li>`;
 }
 
-// for ([id, product] of Object.entries(productData)) {
-// 	let card = createCard(id, product.name, product.short_desc, product.cost);
-// 	productList.appendChild(card);
-// 	addProductList(product.name);
-// 	product_cost += parseInt(product.cost.slice(0, -1));
-// };
-addCost(product_cost);
-addIntroCard(3);
+function readCart(){
+	productList.replaceChildren();
+	list.replaceChildren();
+	product_cost = 0;
+	for (id of cart_data) {
+		let product = productData[id];
+		let card = createCard(id, product.name, product.short_desc, product.cost, product.img);
+		productList.appendChild(card);
+		addProductList(product.name);
+		product_cost += parseInt(product.cost.slice(0, -1));
+	};
+	addCost(product_cost);
+}
+function init(){
+	createPopup("Đã xoá khỏi giỏ hàng!");
+	readCart();
+	addIntroCard(3);
+}
+init();

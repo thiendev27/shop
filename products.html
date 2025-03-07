@@ -7,16 +7,21 @@
 	<link rel="stylesheet" type="text/css" href="css/icon.css">
 	<link rel="stylesheet" href="css/product.css">
 	<link rel="stylesheet" href="css/product-cpnt.css">
+	<link rel="icon" type="image/x-icon" href="res/icon/favicon.svg">
 	<title>Danh mục sản phẩm</title>
 	<script defer src="js/general.js"></script>
+	<script defer src="js/add-to-cart.js"></script>
+	<script defer src="js/nav.js"></script>
+	<script defer src="js/path-nav.js"></script>
 	<script defer src="js/product-page.js"></script>
+	
 </head>
 <!-- Danh mục sản phẩm -->
 <body>
 	<!-- Thanh điều hướng -->
 	<div class="header" id="header">
 		<div class="nav-wrapper">
-			<a href="index.html"><h1>Thiendev's Shop</h1></a>
+			<a href="index.html"><h1><i class="icon i-logo"></i>Thiendev's Shop</h1></a>
 			<div class="social-contact">
 				<a href="#" title="Facebook"><i class="icon i-facebook"></i></a>
 				<a href="#" title="Youtube"><i class="icon i-youtube"></i></a>
@@ -61,11 +66,11 @@
 		</div>
 	</div>
 	<!-- Thân trang -->
+
 	<!-- Mở đầu -->
 	<div class="intro">
-		<div class="path-nav">
-			<a href="#"><i class="icon i-home"></i>Trang chủ</a>
-			<a href="#">Trái cây</a>
+		<div id="path-nav">
+			<a href="index.html"><i class="icon i-home"></i>Trang chủ</a>
 		</div>
 		<div class="heading">
 			<h1>{Trái cây}</h1>
@@ -86,7 +91,7 @@
 	<!-- Khung sản phẩm -->
 	<div class="wrapper">
 		<!-- Danh mục, điều hướng -->
-		<div class="category">
+		<div id="category">
 			<!-- Từng mục -->
 			<!-- Trái cây -->
 			<div class="item">
@@ -94,8 +99,6 @@
 					Trái cây <i class="icon i-chevron-down"></i>
 				</button>
 				<div class="dropdown">
-					<a href="#">Sản phẩm 1</a>
-					<a href="#">Sản phẩm 2</a>
 				</div>
 			</div>
 
@@ -105,8 +108,6 @@
 					Rau củ <i class="icon i-chevron-down"></i>
 				</button>
 				<div class="dropdown">
-					<a href="#">Sản phẩm 1</a>
-					<a href="#">Sản phẩm 2</a>
 				</div>
 			</div>
 			<!-- Thực phẩm khác -->
@@ -115,8 +116,6 @@
 					Thực phẩm khác <i class="icon i-chevron-down"></i>
 				</button>
 				<div class="dropdown">
-					<a href="#">Sản phẩm 1</a>
-					<a href="#">Sản phẩm 2</a>
 				</div>
 			</div>
 		</div>
@@ -124,11 +123,11 @@
 		<div class="product-wrapper">
 			<!-- Nhóm thanh tìm kiếm -->
 			<div class="search-wrapper">
-				<div class="search">
-					<input placeholder="Tìm kiếm...">
-					<button><i class="icon i-search"></i></button>
-				</div>
-				<p>Có tất cả <span id="count-label"></span> sản phẩm.</p>
+				<form id="search-form" class="search">
+					<input id="search-box" placeholder="Tìm kiếm...">
+					<button id="search-action"><i class="icon i-search"></i></button>
+				</form>
+				<p>Có tất cả <span id="count-label">0</span> sản phẩm.</p>
 				<p>(Nhấn vào ảnh trên thẻ để xem chi tiết sản phẩm)</p>
 			</div>
 
@@ -137,19 +136,12 @@
 
 				<!-- Component sản phẩm -->
 				<!-- <div class="product-card">
-					<a href="#">Ảnh mặt hàng</a>
+					<a href="#"><img src="res/photo/product/Coc.jpg" alt="Ảnh mặt hàng"></a>
 					<h1>{Tên mặt hàng}</h1>
 					<p>Mô tả: Lorem ipsum</p>
 					<hr>
-					<p class="cost">x Đ/1kg <span>Tổng: x Đ</span></p>
-					<div class="button-layout">
-						<div class="count-field">
-							<button>-</button>
-							<input type="number" min="0" max="99" value="1">
-							<button>+</button>
-						</div>
-						<button class="default-btn">Thêm vào giỏ <i class="icon i-shopping-cart-light"></i></button>
-					</div>
+					<p class="cost">x Đ/1kg</p>
+					<button class="default-btn">Thêm vào giỏ <i class="icon i-shopping-cart-light"></i></button>
 				</div> -->
 				<!--  -->
 
