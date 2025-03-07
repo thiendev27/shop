@@ -35,18 +35,15 @@
 	min-height: 500px;
 	padding: 20px;
 }
-/*.category, .product-wrapper {
-	border: 1px black solid;
-}*/
 
 	/*Điều hướng*/
-.category {
+#category {
 	min-width: 200px;
 	background: var(--nav);
 	padding: 10px 20px;
 	border-radius: 10px;
 	flex-grow: 0;
-	height: 320px;
+	height: fit-content;
 }
 .item > button {
 	width: 200px;
@@ -66,17 +63,24 @@
 }
 .item > .dropdown {
 	display: block;
-	height: 0px;
+	height: 0;
 	overflow: hidden;
-	transition: 0.2s;
+	transform: translateX(-300px);
+	transition: 0.2s ease-out;
 }
 .dropdown.show {
-	height: 60px;
-/*	height: fit-content;*/
+	height: fit-content;
+	transform: translateX(0);
 }
 .item > .dropdown > a {
 	display: block;
 	padding: 4px 20px;
+}
+.item > .dropdown > a::before {
+	content: "\25C6";
+	font-size: 12px;
+	margin-right: 15px;
+	font-weight: bold;
 }
 
 /*Sản phẩm*/

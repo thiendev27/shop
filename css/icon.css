@@ -97,3 +97,9 @@
 .i-trash::before {
   background-image: url("../res/icon/trash.svg");
 }
+.i-tick-circle::before {
+  background-image: url("../res/icon/tick-circle.svg");
+}
+.i-logo::before {
+  background-image: url("../res/icon/favicon.svg");
+}

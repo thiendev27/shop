@@ -1,5 +1,4 @@
 
-
 /*Phần đầu trang*/
 .heading {
 	min-height: 520px;
@@ -9,22 +8,10 @@
 	align-items: baseline;
 	padding: 15%;
 	box-sizing: border-box;
-	position: relative;
 
 }
 .heading::before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	display: block;
 	background-image: url("../res/photo/vegetable.jpg");
-	background-size: cover;
-/*	background-color: #BCD38B;*/
-	filter: brightness(0.5);
-	width: 100%;
-	height: 100%;
 }
 .heading > h1 {
 	font-family: "Calistoga";
@@ -64,7 +51,7 @@
 .intro-quality > .card > h2, .intro-quality > .card > p {
 	margin: 10px;
 }
-.intro-quality > .card > img {
+.intro-quality > .card img {
 	display: block;
 /*	background: #BCD38B;*/
 	width: 200px;
@@ -123,18 +110,30 @@
 
 /**/
 /*Best seller*/
-
+.best-seller {
+	min-height: 450px;
+	padding: 20px;
+	box-sizing: border-box;
+}
 .best-seller > .info > * {
 	text-align: center;
 }
 
+
 /**/
 
 /*Phần các loại mặt hàng*/
+.category {
+	padding: 20px;
+	box-sizing: border-box;
+}
 .category > h1 {
 	text-align: center;
+	color: var(--nav);
 }
-
+.category::before {
+	background-image: url("../res/photo/best-seller-bg.jpg");
+}
 .category > .product-slideshow {
 	justify-content: center;
 	gap: 100px;
@@ -149,38 +148,31 @@
 	border-radius: 0;
 	background: rgba(67, 71, 56, 0.5);
 	color: var(--nav);
-
+	box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.3);
 }
-
-
-
+a.product-card.bg:nth-child(1) {
+	background-image: url("../res/photo/fruit-bg.jpg");
+}
+a.product-card.bg:nth-child(2) {
+	background-image: url("../res/photo/vegetable-bg.jpg");
+}
+a.product-card.bg:nth-child(3) {
+	background-image: url("../res/photo/other-bg.jpg");
+	background-position: -50px -30px;
+}
 /*Credit*/
 .credit {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-/*	background: url("../res/photo/adonyi-foto.jpg");*/
-	background-size: 1366px;
-	background-position-y: -350px;
 	height: 450px;
-	position: relative;
 }
 
 /*Hình nền*/
 .credit::before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	display: block;
 	background-image: url("../res/photo/credit-bg.jpg");
-	background-size: cover;
-/*	background-color: #BCD38B;*/
 	filter: brightness(0.6);
-	width: 100%;
-	height: 100%;
 }
 .credit > img {
 	width: 160px;
@@ -194,4 +186,12 @@
 	text-align: center;
 	font-size: 18px;
 	color: var(--nav);
+	font-style: italic;
 }
+.credit > p:nth-child(3) {
+	color: var(--nav);
+	font-size: 13px;
+	text-align: right;
+	font-style: none;
+}
+
